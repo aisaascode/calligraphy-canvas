@@ -5,12 +5,12 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 
 // Categories for filtering
-const categories = ["All", "Gothic", "Modern", "Blackletter", "Colored", "Wedding", "Business"];
+const categories = ["All", "Gothic", "Modern", "Blackletter", "Colored", "Wedding", "Business", "Alphabets", "Sketches"];
 
 const Gallery = () => {
   const [activeCategory, setActiveCategory] = useState("All");
   
-  // Gallery items with real uploaded images
+  // Gallery items with real uploaded images including the newly uploaded ones
   const galleryItems = [
     { 
       id: 1, 
@@ -63,13 +63,90 @@ const Gallery = () => {
     },
     { 
       id: 8, 
+      title: "Gothic Calligraphy Title", 
+      category: "Gothic", 
+      image: "/lovable-uploads/218c29e5-9c7f-4158-9ab5-f6751cf389be.png",
+      description: "Gothic and calligraphy title text in classic black ink"
+    },
+    { 
+      id: 9, 
+      title: "Blackletter Script", 
+      category: "Blackletter", 
+      image: "/lovable-uploads/164f7d3b-8322-419a-9370-278dba719341.png",
+      description: "Vertical blackletter lettering with elegant flourishes"
+    },
+    { 
+      id: 10, 
+      title: "Ankush Gradient", 
+      category: "Colored", 
+      image: "/lovable-uploads/26d105ff-8b52-42d4-8506-d63bd6a5694c.png",
+      description: "Bold gradient colored lettering in yellow and red"
+    },
+    { 
+      id: 11, 
+      title: "Blackletter Practice", 
+      category: "Blackletter", 
+      image: "/lovable-uploads/b84bbd75-3740-46fa-8f07-255d3b9213d9.png",
+      description: "Gothic blackletter alphabet practice piece with structured layout"
+    },
+    { 
+      id: 12, 
+      title: "Blackletter Alphabet Grid", 
+      category: "Alphabets", 
+      image: "/lovable-uploads/f279ccbe-15d4-4eab-933e-b4a02205e02a.png",
+      description: "Complete gothic alphabet in grid format with precise letterforms"
+    },
+    { 
+      id: 13, 
+      title: "Gothic Alphabet Reference", 
+      category: "Alphabets", 
+      image: "/lovable-uploads/d9b28651-a308-435f-98cc-10f60f431a82.png",
+      description: "Gothic alphabet reference sheet with multiple letter variations"
+    },
+    { 
+      id: 14, 
+      title: "Shadowed Gothic Alphabet", 
+      category: "Alphabets", 
+      image: "/lovable-uploads/1661967a-713c-410c-98f1-15711e6c49c1.png",
+      description: "Complete gothic alphabet with shadowed effects"
+    },
+    { 
+      id: 15, 
+      title: "Happy New Year Lettering", 
+      category: "Blackletter", 
+      image: "/lovable-uploads/56fda0a7-1735-4ba4-91dc-50bee67a48b9.png",
+      description: "Decorative blackletter calligraphy for New Year celebration"
+    },
+    { 
+      id: 16, 
+      title: "Ankush on Pink Background", 
+      category: "Colored", 
+      image: "/lovable-uploads/8df0c783-9f21-46dd-be68-6bb920d0beb0.png",
+      description: "Black gothic lettering on vibrant pink watercolor wash"
+    },
+    { 
+      id: 17, 
+      title: "Lined Paper Practice", 
+      category: "Sketches", 
+      image: "/lovable-uploads/bde80346-404e-4e6c-ab55-ee88824cbd6d.png",
+      description: "Gothic calligraphy practice on lined notebook paper"
+    },
+    { 
+      id: 18, 
+      title: "Preliminary Gothic Sketches", 
+      category: "Sketches", 
+      image: "/lovable-uploads/2b0d65eb-3c94-47cc-8155-f594c2f4bc2e.png",
+      description: "Early stage calligraphy sketches showing planning process"
+    },
+    { 
+      id: 19, 
       title: "Wedding Invitation Suite", 
       category: "Wedding", 
       image: "/placeholder.svg",
       description: "Elegant script for wedding invitations with flourishes"
     },
     { 
-      id: 9, 
+      id: 20, 
       title: "Business Cards Design", 
       category: "Business", 
       image: "/placeholder.svg",
