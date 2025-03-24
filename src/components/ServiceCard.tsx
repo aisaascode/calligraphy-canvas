@@ -6,15 +6,17 @@ interface ServiceCardProps {
   description: string;
   icon: React.ReactNode;
   className?: string;
+  style?: React.CSSProperties;
 }
 
-export function ServiceCard({ title, description, icon, className }: ServiceCardProps) {
+export function ServiceCard({ title, description, icon, className, style }: ServiceCardProps) {
   return (
     <div 
       className={cn(
         "group relative bg-card p-6 rounded-xl border border-border transition-all duration-500 hover:shadow-md hover:border-primary/20 card-hover",
         className
       )}
+      style={style}
     >
       <div className="mb-4 text-primary group-hover:scale-110 transition-transform duration-300">
         {icon}
