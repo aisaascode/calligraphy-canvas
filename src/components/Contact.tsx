@@ -152,9 +152,9 @@ export function Contact() {
                   <div>
                     <h4 className="font-medium mb-1">Our Location</h4>
                     <p className="text-muted-foreground">
-                      123 Calligraphy Lane<br />
-                      Artisan District<br />
-                      San Francisco, CA 94103
+                      Heera Nagar Gali No. 1<br />
+                      Near by Gautam and Company<br />
+                      Jaipur, Rajasthan
                     </p>
                   </div>
                 </div>
@@ -166,13 +166,13 @@ export function Contact() {
                   <div>
                     <h4 className="font-medium mb-1">Email Us</h4>
                     <p className="text-muted-foreground">
-                      <a href="mailto:hello@calligraphycanvas.com" className="ink-stroke">
-                        hello@calligraphycanvas.com
+                      <a href="mailto:ankushkumar090809@gmail.com" className="ink-stroke">
+                        ankushkumar090809@gmail.com
                       </a>
                     </p>
                     <p className="text-muted-foreground mt-1">
-                      <a href="mailto:support@calligraphycanvas.com" className="ink-stroke">
-                        support@calligraphycanvas.com
+                      <a href="mailto:cubemaster476@gmail.com" className="ink-stroke">
+                        cubemaster476@gmail.com
                       </a>
                     </p>
                   </div>
@@ -185,12 +185,12 @@ export function Contact() {
                   <div>
                     <h4 className="font-medium mb-1">Call Us</h4>
                     <p className="text-muted-foreground">
-                      <a href="tel:+14155552671" className="ink-stroke">
-                        +1 (415) 555-2671
+                      <a href="tel:+919625654137" className="ink-stroke">
+                        +91 9625654137
                       </a>
                     </p>
                     <p className="text-muted-foreground mt-1">
-                      Monday - Friday: 9am - 5pm PST
+                      Monday - Friday: 9am - 5pm IST
                     </p>
                   </div>
                 </div>
