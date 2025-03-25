@@ -1,10 +1,12 @@
 
 import { useState } from "react";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Send, CreditCard, Pen } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
 
 export function Contact() {
   const [formStatus, setFormStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+  const [bookingType, setBookingType] = useState<"workshop" | "custom" | "digital">("workshop");
   
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -100,6 +102,41 @@ export function Contact() {
                   required
                 ></textarea>
               </div>
+
+              <div>
+                <label className="block text-sm font-medium mb-2">
+                  Calligraphy Services
+                </label>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                  <Button
+                    type="button"
+                    variant={bookingType === "workshop" ? "default" : "outline"}
+                    className="flex items-center justify-center gap-2"
+                    onClick={() => setBookingType("workshop")}
+                  >
+                    <Pen className="h-4 w-4" />
+                    <span>Workshop</span>
+                  </Button>
+                  <Button
+                    type="button"
+                    variant={bookingType === "custom" ? "default" : "outline"}
+                    className="flex items-center justify-center gap-2"
+                    onClick={() => setBookingType("custom")}
+                  >
+                    <CreditCard className="h-4 w-4" />
+                    <span>Custom Order</span>
+                  </Button>
+                  <Button
+                    type="button"
+                    variant={bookingType === "digital" ? "default" : "outline"}
+                    className="flex items-center justify-center gap-2"
+                    onClick={() => setBookingType("digital")}
+                  >
+                    <Mail className="h-4 w-4" />
+                    <span>Digital Work</span>
+                  </Button>
+                </div>
+              </div>
               
               <button
                 type="submit"
@@ -154,7 +191,7 @@ export function Contact() {
                     <p className="text-muted-foreground">
                       Heera Nagar Gali No. 1<br />
                       Near by Gautam and Company<br />
-                      Jaipur, Rajasthan
+                      Gurugram, Haryana
                     </p>
                   </div>
                 </div>
@@ -197,10 +234,24 @@ export function Contact() {
               </div>
             </div>
             
-            {/* Google Maps Embed (Placeholder) */}
-            <div className="mt-8 h-64 rounded-lg overflow-hidden border border-border">
-              <div className="w-full h-full bg-secondary/50 flex items-center justify-center">
-                <p className="text-muted-foreground">Interactive map would be embedded here</p>
+            {/* Payment Options */}
+            <div className="mt-8 p-6 bg-card rounded-lg border border-border">
+              <h4 className="font-serif text-lg mb-4">Payment Options</h4>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="p-4 border border-border rounded-md flex items-center">
+                  <CreditCard className="h-5 w-5 text-primary mr-3" />
+                  <div>
+                    <h5 className="font-medium text-sm">Credit/Debit Cards</h5>
+                    <p className="text-xs text-muted-foreground">Visa, Mastercard, RuPay</p>
+                  </div>
+                </div>
+                <div className="p-4 border border-border rounded-md flex items-center">
+                  <Phone className="h-5 w-5 text-primary mr-3" />
+                  <div>
+                    <h5 className="font-medium text-sm">UPI Payments</h5>
+                    <p className="text-xs text-muted-foreground">GPay, PhonePe, Paytm</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
