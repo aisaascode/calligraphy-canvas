@@ -16,7 +16,7 @@ export function ContactInfo() {
             <p className="text-muted-foreground">
               Heera Nagar Gali No. 1<br />
               Near by Gautam and Company<br />
-              Gurugram, Haryana
+              Jaipur, Rajasthan
             </p>
           </div>
         </div>
