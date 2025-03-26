@@ -47,8 +47,8 @@ export function Header() {
           to="/" 
           className="text-2xl font-serif font-semibold tracking-tight flex items-center gap-2 transition-opacity hover:opacity-80"
         >
-          <span className="text-primary">AK</span>
-          <span className="text-foreground">Calligraphy</span>
+          <span className="text-primary">Calligraphy</span>
+          <span className="text-foreground">Canvas</span>
         </Link>
 
         {/* Desktop Navigation */}

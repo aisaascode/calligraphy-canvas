@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, Twitter } from "lucide-react";
 
@@ -10,8 +11,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
             <Link to="/" className="text-2xl font-serif font-semibold tracking-tight">
-              <span className="text-primary">AK</span>
-              <span className="text-foreground">Calligraphy</span>
+              <span className="text-primary">Calligraphy</span>
+              <span className="text-foreground">Canvas</span>
             </Link>
             <p className="text-muted-foreground mt-2 text-pretty">
               Elevating the art of handwriting through timeless elegance and modern expression.
@@ -117,7 +118,7 @@ export function Footer() {
 
         <div className="border-t border-border mt-12 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} AK Calligraphy. All rights reserved.
+            © {currentYear} Calligraphy Canvas. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm">
             <Link to="/privacy" className="text-muted-foreground hover:text-foreground">
